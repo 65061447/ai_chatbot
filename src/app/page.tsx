@@ -11,7 +11,6 @@ export default function Home() {
     <main className='min-h-screen w-screen flex'>
     <div className='w-full my-15 bg-sky-950'>
       <div className="text-white flex justify-center font-sans font-extrabold text-6xl pt-[18.2vw]">
-        <img src="../../public/Travel.jpg"/> 
         <label>Welcome To PNDC</label>
       </div>
       <span className="text-white flex justify-center font-sans font-extrabold text-3xl pt-13">
