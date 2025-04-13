@@ -1,6 +1,7 @@
 'use client';
 import { Link } from "react-router-dom";
 import { useRouter } from 'next/navigation';
+import { Send } from "lucide-react";
 
 
 
@@ -23,9 +24,9 @@ export default function Mainpage() {
         <div className='w-[80vw] flex justify-center items-end pb-[8%]'>
             <div className="w-[75%] h-[6%]">
                 <div className="w-full h-full rounded-3xl bg-white flex items-center border-1">
-                    <input placeholder="ถามมา" className="w-full h-full rounded-3xl px-5"></input>
-                    <button className="bg-blue" onClick={handleClick}>
-                        Send
+                    <input placeholder="ถามมา" className="w-full h-full rounded-3xl px-5 focus: outline-0"></input>
+                    <button className="bg-blue mr-5" onClick={handleClick}>
+                    <Send />
                 </button>
                 </div>
             </div>
