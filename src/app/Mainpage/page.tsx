@@ -14,7 +14,7 @@ export default function Mainpage() {
 
 
     return <main className='min-h-screen w-screen flex'>
-        <div className='w-[20vw] bg-sky-950'>
+        <div className='w-[15vw] bg-sky-950'>
         <p className="h-[50vw] pt-15 text-white flex justify-center font-sans font-extrabold text-4xl ">PNDC</p>
         </div>
         <div>
