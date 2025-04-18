@@ -43,13 +43,13 @@ export default function Mainpage() {
           <div className="bg-white border w-[80%] border-gray-300 rounded-xl p-6 text-black min-h-[250px] shadow-md ">
             {loading
               ? "⌛ กำลังคิดคำตอบ..."
-              : answer || "🤖 พิมพ์คำถามของคุณด้านล่างแล้วกดส่ง"}
+              : answer || "✈️ คุณอยากไปเที่ยวที่ไหนสามารถพิมพ์ลงด้านล่างได้เลย!!"}
           </div>
         </div>
         <div className="w-[100%] h-[30%] flex justify-center items-center">
           <div className="w-[70%] h-[60px] bg-white flex rounded-full border border-black">
             <input
-              placeholder="ถามมา"
+              placeholder="กรอกข้อความ"
               className="w-full h-full rounded-3xl px-5 focus:outline-none"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
