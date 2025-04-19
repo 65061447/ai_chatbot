@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Send } from "lucide-react";
+import Image from 'next/image';
 
 export default function Mainpage() {
   const [question, setQuestion] = useState("");
@@ -23,7 +24,7 @@ export default function Mainpage() {
       const data = await res.json();
       setAnswer(data.answer);
     } catch (err) {
-      setAnswer("❌ Error talking to the chatbot.");
+      setAnswer("❌ Error chatbot server is down.");
       console.error(err);
     } finally {
       setLoading(false);
@@ -37,7 +38,6 @@ export default function Mainpage() {
           PNDC
         </p>
       </div>
-
       <div className=" h-full w-[80%]">
         <div className=" h-[70%] flex justify-center items-center w-full">
           <div className="bg-white border w-[80%] border-gray-300 rounded-xl p-6 text-black min-h-[250px] shadow-md ">
